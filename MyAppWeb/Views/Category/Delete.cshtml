@@ -5,19 +5,20 @@
             <h2 class="text-primary">Category</h2>
             <hr />
         </div>
+        <input type="hidden" asp-for="Id" />
         <div asp-validation-summary="All"></div>
         <div class="row mb-3">
             <label asp-for="Name"></label>
-            <input asp-for="Name" class="form-control" />
+            <input disabled asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
         <div class="row mb-3">
             <label asp-for="DisplayOrder"></label>
-            <input asp-for="DisplayOrder" class="form-control" />
+            <input disabled asp-for="DisplayOrder" class="form-control" />
             <span asp-validation-for="DisplayOrder" class="text-danger"></span>
         </div>
-        <button class="btn btn-primary" type="submit">
-            Create
+        <button class="btn btn-danger" type="submit">
+            Delete
         </button>
     </div>
     <a asp-action="Index" asp-controller="category">Back to List</a>
