@@ -65,12 +65,7 @@ namespace MyApp.DataAccessLayer.Infrastructure.Repository
 
         public T GetT(Expression<Func<T, bool>> predicate)
         {
-            var result = _dbSet.FirstOrDefault(predicate);
-            if (result != null)
-            {
-                return result;
-            }
-            return null;
+            return _dbSet.Where(predicate).FirstOrDefault();
         }
     }
 }
