@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MyAppWeb.Data;
+using MyApp.DataAccessLayer;
+using MyApp.DataAccessLayer.Infrastructure.IRepository;
+using MyApp.DataAccessLayer.Infrastructure.Repository;
 
 namespace MyAppWeb
 {
@@ -11,10 +13,14 @@ namespace MyAppWeb
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            
+            //builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 
             var app = builder.Build();
 

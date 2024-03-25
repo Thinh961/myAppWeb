@@ -1,16 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyAppWeb.Data;
-using MyAppWeb.Models;
+using MyApp.DataAccessLayer;
+using MyApp.DataAccessLayer.Infrastructure.IRepository;
+using MyApp.Models;
 
 namespace MyAppWeb.Controllers
 {
     public class CategoryController : Controller
     {
         private ApplicationDbContext _context;
-
-        public CategoryController(ApplicationDbContext context)
+        private ICategoryRepository _categoryRepository;
+        public CategoryController(ApplicationDbContext context, ICategoryRepository categoryRepository)
         {
             _context = context;
+            _categoryRepository = categoryRepository;
         }
 
         public IActionResult Index()
@@ -31,10 +33,14 @@ namespace MyAppWeb.Controllers
         {
             if(ModelState.IsValid)
             {
-                _context.Categories.Add(category);
-                _context.SaveChanges();
-                TempData["success"] = "Category created done!";
+                //_context.Categories.Add(category);
+                //_context.SaveChanges();
+                //TempData["success"] = "Category created done!";
+                //return RedirectToAction("Index");
+
+                _categoryRepository.Add(category);
                 return RedirectToAction("Index");
+
             }
             return View(category);
         }

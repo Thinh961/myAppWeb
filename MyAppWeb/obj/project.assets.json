@@ -3725,6 +3725,33 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "MyApp.DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.1",
+          "MyApp.Models": "1.0.0",
+          "System.Linq.Expressions": "4.3.0"
+        },
+        "compile": {
+          "bin/placeholder/MyApp.DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.DataAccessLayer.dll": {}
+        }
+      },
+      "MyApp.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MyApp.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.Models.dll": {}
+        }
       }
     }
   },
@@ -10671,6 +10698,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "MyApp.DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.DataAccessLayer/MyApp.DataAccessLayer.csproj",
+      "msbuildProject": "../MyApp.DataAccessLayer/MyApp.DataAccessLayer.csproj"
+    },
+    "MyApp.Models/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.Models/MyApp.Models.csproj",
+      "msbuildProject": "../MyApp.Models/MyApp.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10678,23 +10715,29 @@
       "Microsoft.EntityFrameworkCore >= 6.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.1",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
+      "MyApp.DataAccessLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Thinh\\.nuget\\packages\\": {}
+    "C:\\Users\\thinhnc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj",
+      "projectUniqueName": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
       "projectName": "MyAppWeb",
-      "projectPath": "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj",
-      "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
-      "outputPath": "D:\\dotNet2\\MyApp\\MyAppWeb\\obj\\",
+      "projectPath": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
+      "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
+      "outputPath": "D:\\myAppWeb\\MyAppWeb\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10702,13 +10745,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+              "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
