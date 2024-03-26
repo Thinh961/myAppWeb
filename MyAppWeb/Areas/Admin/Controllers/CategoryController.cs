@@ -2,6 +2,7 @@
 using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
+using MyApp.Models.ViewModels;
 
 namespace MyAppWeb.Areas.Admin.Controllers
 {
@@ -17,54 +18,70 @@ namespace MyAppWeb.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Category> categories = _unitOfWork.Category.GetAll();
-            return View(categories);
+            CategoryVM categoryVM = new CategoryVM();
+            categoryVM.categories = _unitOfWork.Category.GetAll();
+            return View(categoryVM);
         }
+
+        //[HttpGet]
+        //public IActionResult Create()
+        //{
+        //    return View();
+        //}
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public IActionResult Create(Category category)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _unitOfWork.Category.Add(category);
+        //        _unitOfWork.Save();
+        //        TempData["success"] = "Category created done!";
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(category);
+        //}
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult CreateUpdate(int? id)
         {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
-        {
-            if (ModelState.IsValid)
-            {
-                _unitOfWork.Category.Add(category);
-                _unitOfWork.Save();
-                TempData["success"] = "Category created done!";
-                return RedirectToAction("Index");
-            }
-            return View(category);
-        }
-
-        [HttpGet]
-        public IActionResult Edit(int? id)
-        {
+            CategoryVM categoryVm = new CategoryVM();
             if (id == null || id == 0)
             {
-                return NotFound();
+                return View(categoryVm);
             }
-            var category = _unitOfWork.Category.GetT(X => X.Id == id);
-            if (category == null)
+            else
             {
-                return NotFound();
+                categoryVm.Category = _unitOfWork.Category.GetT(x => x.Id == id);
+                if (categoryVm.Category == null)
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    return View(categoryVm);
+                }
             }
-            return View(category);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(Category category)
+        public IActionResult CreateUpdate(CategoryVM categoryVM)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(category);
+                if(categoryVM.Category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(categoryVM.Category);
+                    TempData["success"] = "Category created done!";
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(categoryVM.Category);
+                    TempData["success"] = "Category updated done!";
+                }
                 _unitOfWork.Save();
-                TempData["success"] = "Category updated done!";
                 return RedirectToAction("Index");
             }
             return RedirectToAction("Index");

@@ -494,3 +494,7 @@ D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.Models.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.pdb
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.Models.pdb
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.Models.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.pdb
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.Models.pdb

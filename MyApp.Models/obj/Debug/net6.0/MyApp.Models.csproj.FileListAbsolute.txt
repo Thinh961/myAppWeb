@@ -10,3 +10,15 @@ D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.dll
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
+D:\dotNet2\MyApp\MyApp.Models\bin\Debug\net6.0\MyApp.Models.deps.json
+D:\dotNet2\MyApp\MyApp.Models\bin\Debug\net6.0\MyApp.Models.dll
+D:\dotNet2\MyApp\MyApp.Models\bin\Debug\net6.0\MyApp.Models.pdb
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.AssemblyReference.cache
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfoInputs.cache
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfo.cs
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.CoreCompileInputs.cache
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.dll
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
+D:\dotNet2\MyApp\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
