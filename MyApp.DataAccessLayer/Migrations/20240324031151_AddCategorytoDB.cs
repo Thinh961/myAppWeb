@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MyAppWeb.Migrations
+namespace MyApp.DataAccessLayer.Migrations
 {
     public partial class AddCategorytoDB : Migration
     {
