@@ -505,3 +505,8 @@ D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\dotNet2\MyApp\MyAppWeb\obj\Debug\net6.0\MyAppWeb.MvcApplicationPartsAssemblyInfo.cs

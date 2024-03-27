@@ -3,6 +3,7 @@ using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
 using MyApp.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyAppWeb.Areas.Admin.Controllers
 {
@@ -50,7 +51,7 @@ namespace MyAppWeb.Areas.Admin.Controllers
             {
                 Product = new(),
                 Categories = _unitOfWork.Category.GetAll().Select(x =>
-                new System.Web.Mvc.SelectListItem()
+                new SelectListItem()
                 {
                     Text = x.Name,
                     Value = x.Id.ToString()

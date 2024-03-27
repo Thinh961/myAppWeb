@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {}
+    "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj": {}
   },
   "projects": {
-    "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+    "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
         "projectName": "MyApp.DataAccessLayer",
-        "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\obj\\",
+        "projectPath": "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
-                "projectPath": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj"
+              "D:\\dotNet2\\MyApp\\MyApp.Models\\MyApp.Models.csproj": {
+                "projectPath": "D:\\dotNet2\\MyApp\\MyApp.Models\\MyApp.Models.csproj"
               }
             }
           }
@@ -86,21 +81,17 @@
         }
       }
     },
-    "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
+    "D:\\dotNet2\\MyApp\\MyApp.Models\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
+        "projectUniqueName": "D:\\dotNet2\\MyApp\\MyApp.Models\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyApp.Models\\obj\\",
+        "projectPath": "D:\\dotNet2\\MyApp\\MyApp.Models\\MyApp.Models.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\MyApp\\MyApp.Models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,7 +99,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -127,9 +117,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNet.Mvc": {
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
-              "version": "[5.3.0, )"
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
@@ -152,21 +142,17 @@
         }
       }
     },
-    "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {
+    "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
+        "projectUniqueName": "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj",
         "projectName": "MyAppWeb",
-        "projectPath": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyAppWeb\\obj\\",
+        "projectPath": "D:\\dotNet2\\MyApp\\MyAppWeb\\MyAppWeb.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\MyApp\\MyAppWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -174,7 +160,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -182,8 +167,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
-                "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
+              "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+                "projectPath": "D:\\dotNet2\\MyApp\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
               }
             }
           }
