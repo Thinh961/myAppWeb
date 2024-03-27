@@ -498,3 +498,10 @@ D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.dll
 D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.Models.dll
 D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.DataAccessLayer.pdb
 D:\dotNet2\MyApp\MyAppWeb\bin\Debug\net6.0\MyApp.Models.pdb
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.Mvc.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.Razor.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.Helpers.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\System.Web.WebPages.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll

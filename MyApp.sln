@@ -5,9 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAppWeb", "MyAppWeb\MyAppWeb.csproj", "{F2161EA0-4014-481D-BAC6-E6190F4398F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.Models", "MyApp.Models\MyApp.Models.csproj", "{DE015ABC-460B-4B5F-B238-ADACA738661E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApp.Models", "MyApp.Models\MyApp.Models.csproj", "{DE015ABC-460B-4B5F-B238-ADACA738661E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp.DataAccessLayer", "MyApp.DataAccessLayer\MyApp.DataAccessLayer.csproj", "{05E92762-6F4F-4FB6-98A5-BE5F418C3938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApp.DataAccessLayer", "MyApp.DataAccessLayer\MyApp.DataAccessLayer.csproj", "{05E92762-6F4F-4FB6-98A5-BE5F418C3938}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
