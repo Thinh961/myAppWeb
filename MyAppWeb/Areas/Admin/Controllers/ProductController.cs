@@ -11,17 +11,27 @@ namespace MyAppWeb.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private IUnitOfWork _unitOfWork;
+        private IWebHostEnvironment _hostingEnvironment;
 
-        public ProductController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostingEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _hostingEnvironment = hostingEnvironment;
         }
+
+        #region APICALL
+        public IActionResult AllProducts()
+        {
+            var products = _unitOfWork.Product.GetAll();
+            return Json(new { data = products });
+        }
+        #endregion
 
         public IActionResult Index()
         {
-            ProductVM productVM = new ProductVM();
-            productVM.Products = _unitOfWork.Product.GetAll();
-            return View(productVM);
+            //ProductVM productVM = new ProductVM();
+            //productVM.Products = _unitOfWork.Product.GetAll();
+            return View();
         }
 
         //[HttpGet]
@@ -77,20 +87,38 @@ namespace MyAppWeb.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult CreateUpdate(ProductVM productVM)
+        public IActionResult CreateUpdate(ProductVM productVM, IFormFile? file)
         {
             if (ModelState.IsValid)
             {
-                if(productVM.Product.Id == 0)
+                string fileName = String.Empty;
+                if (file != null)
+                {
+                    string uploadDir = Path.Combine(_hostingEnvironment.WebRootPath, "ProductImages");
+                    fileName = Guid.NewGuid().ToString()+"-"+file.FileName;
+                    string filePAth = Path.Combine(uploadDir, fileName);
+                    using (var fileStream = new FileStream(filePAth, FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    productVM.Product.ImageUrl = @"\ProductImages\" + fileName;
+                }
+                if (productVM.Product.Id == 0)
                 {
                     _unitOfWork.Product.Add(productVM.Product);
                     TempData["success"] = "Product created done!";
                 }
-                else
-                {
-                    _unitOfWork.Product.Update(productVM.Product);
-                    TempData["success"] = "Product updated done!";
-                }
+
+                //if(productVM.Product.Id == 0)
+                //{
+                //    _unitOfWork.Product.Add(productVM.Product);
+                //    TempData["success"] = "Product created done!";
+                //}
+                //else
+                //{
+                //    _unitOfWork.Product.Update(productVM.Product);
+                //    TempData["success"] = "Product updated done!";
+                //}
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
