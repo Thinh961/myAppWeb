@@ -1008,12 +1008,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\MyAppWeb.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\95f93335-5e4b-468a-be88-f51f18e194ac-Tọa sơn quan hổ đấu denoise.jpeg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\57128917-8257-4a6a-ae2b-e3bcc8eee988-03b1e17ebc96c1ce885c7e89b3a940ba.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MyAppWeb</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/MyAppWeb</BasePath>
-      <RelativePath>ProductImages/95f93335-5e4b-468a-be88-f51f18e194ac-Tọa sơn quan hổ đấu denoise.jpeg</RelativePath>
+      <RelativePath>ProductImages/57128917-8257-4a6a-ae2b-e3bcc8eee988-03b1e17ebc96c1ce885c7e89b3a940ba.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1022,7 +1022,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\95f93335-5e4b-468a-be88-f51f18e194ac-Tọa sơn quan hổ đấu denoise.jpeg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ProductImages\57128917-8257-4a6a-ae2b-e3bcc8eee988-03b1e17ebc96c1ce885c7e89b3a940ba.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
