@@ -4,6 +4,7 @@ using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.DataAccessLayer.Infrastructure.Repository;
 using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace MyAppWeb
 {
@@ -20,6 +21,9 @@ namespace MyAppWeb
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
+                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
             
             //builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
@@ -38,6 +42,7 @@ namespace MyAppWeb
             app.UseStaticFiles();
 
             app.UseRouting();
+                        app.UseAuthentication();;
 
             app.UseAuthorization();
 
