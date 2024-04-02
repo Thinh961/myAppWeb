@@ -4529,6 +4529,19 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "MyApp.CommonHelper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.28"
+        },
+        "compile": {
+          "bin/placeholder/MyApp.CommonHelper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyApp.CommonHelper.dll": {}
+        }
+      },
       "MyApp.DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4551,6 +4564,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.28",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0"
         },
         "compile": {
@@ -12409,6 +12423,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "MyApp.CommonHelper/1.0.0": {
+      "type": "project",
+      "path": "../MyApp.CommonHelper/MyApp.CommonHelper.csproj",
+      "msbuildProject": "../MyApp.CommonHelper/MyApp.CommonHelper.csproj"
+    },
     "MyApp.DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../MyApp.DataAccessLayer/MyApp.DataAccessLayer.csproj",
@@ -12427,6 +12446,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.28",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.28",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.16",
+      "MyApp.CommonHelper >= 1.0.0",
       "MyApp.DataAccessLayer >= 1.0.0"
     ]
   },
@@ -12464,6 +12484,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
+              "projectPath": "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj"
+            },
             "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
               "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
             }

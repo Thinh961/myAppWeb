@@ -9,3 +9,5 @@
 /.vs/MyApp/DesignTimeBuild/.dtbcache.v2
 /.vs/MyApp/v17/.futdcache.v2
 /.vs/MyApp/v17/.suo
+.vs/
+.cache/

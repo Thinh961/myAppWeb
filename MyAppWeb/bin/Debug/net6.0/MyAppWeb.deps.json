@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.28",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.28",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.16",
+          "MyApp.CommonHelper": "1.0.0",
           "MyApp.DataAccessLayer": "1.0.0"
         },
         "runtime": {
@@ -2835,6 +2836,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "MyApp.CommonHelper/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "6.0.28"
+        },
+        "runtime": {
+          "MyApp.CommonHelper.dll": {}
+        }
+      },
       "MyApp.DataAccessLayer/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.28",
@@ -2850,6 +2859,7 @@
       },
       "MyApp.Models/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.28",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0"
         },
         "runtime": {
@@ -4683,6 +4693,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "MyApp.CommonHelper/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MyApp.DataAccessLayer/1.0.0": {
       "type": "project",

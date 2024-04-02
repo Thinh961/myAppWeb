@@ -518,3 +518,5 @@ D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Ext
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.CommonHelper.dll
+D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\MyApp.CommonHelper.pdb
