@@ -10,3 +10,16 @@ D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.dll
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.deps.json
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.dll
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\bin\Debug\net6.0\MyApp.CommonHelper.pdb
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.AssemblyReference.cache
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfoInputs.cache
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfo.cs
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.CoreCompileInputs.cache
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.sourcelink.json
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.dll
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
+D:\dotNet2\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll
