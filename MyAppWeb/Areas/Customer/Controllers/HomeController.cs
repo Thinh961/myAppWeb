@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.Models;
-using MyApp.Models.ViewModels;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace MyAppWeb.Areas.Customer.Controllers
 {
@@ -21,19 +22,45 @@ namespace MyAppWeb.Areas.Customer.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            IEnumerable<Product> products = _unitOfWork.Product.GetAll(includeProperties:"Category");
+            IEnumerable<Product> products = _unitOfWork.Product.GetAll(includeProperties: "Category");
             return View(products);
-        }        
-        
+        }
+
         [HttpGet]
-        public IActionResult Details(int? id)
+        public IActionResult Details(int? ProductId)
         {
             Cart cart = new Cart()
             {
-                Product = _unitOfWork.Product.GetT(x => x.Id == id, includeProperties: "Category"),
-                Count = 1
+                Product = _unitOfWork.Product.GetT(x => x.Id == ProductId, includeProperties: "Category"),
+                Count = 1,
+                ProductId = ProductId.Value
             };
             return View(cart);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public IActionResult Details(Cart cart)
+        {
+            if (ModelState.IsValid)
+            {
+                var claimsIdentity = (ClaimsIdentity)User.Identity;
+                var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+                cart.ApplicationUserId = claims.Value;
+
+                var cartItem = _unitOfWork.Cart.GetT(x => x.ProductId == cart.ProductId && x.ApplicationUserId == claims.Value);
+
+                if (cartItem != null)
+                {
+                    _unitOfWork.Cart.Add(cart);
+                } else
+                {
+                    _unitOfWork.Cart.IncrementCartItem(cartItem, cart.Count);
+                }
+                _unitOfWork.Save();
+            }
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()
