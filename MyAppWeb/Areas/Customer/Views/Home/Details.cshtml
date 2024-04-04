@@ -9,8 +9,8 @@
         <div class="col-8">
             <div class="row">
                 <label asp-for="Product.Name" class="text-primary">Product Name: @Model.Product.Name</label>
-                <label asp-for="Product.Description">Product Description: @Model.Product.Description</label>
-                <label asp-for="Product.Description">Product Price: @Model.Product.Price.ToString("0.00")</label>
+                <label asp-for="Product.Description">Product Description: @Html.Raw(Model.Product.Description)</label>
+                <label asp-for="Product.Price">Product Price: @Model.Product.Price.ToString("0.00")</label>
                 <label asp-for="Product.Category.Id">Product Category: @Model.Product.Category.Name</label>
                 <div class="d-flex">
                     <label asp-for="Count"></label>
@@ -19,7 +19,7 @@
                 </div>                
                 <div>
                     <button class="btn btn-success" asp-action="Index" asp-controller="Home">Back to list</button>
-                    <button class="btn btn-dark">Add to Cart</button>
+                    <button type="submit" class="btn btn-dark">Add to Cart</button>
                 </div>
             </div>
         </div>

@@ -15,7 +15,7 @@ namespace MyApp.Models
 
         [ValidateNever]
         public Product Product { get; set; }
-
+        [ValidateNever]
         public string ApplicationUserId { get; set; }
 
         [ValidateNever]

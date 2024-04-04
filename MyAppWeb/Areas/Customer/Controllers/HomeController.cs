@@ -33,7 +33,7 @@ namespace MyAppWeb.Areas.Customer.Controllers
             {
                 Product = _unitOfWork.Product.GetT(x => x.Id == ProductId, includeProperties: "Category"),
                 Count = 1,
-                ProductId = ProductId.Value
+                ProductId = (int)ProductId
             };
             return View(cart);
         }
@@ -48,10 +48,9 @@ namespace MyAppWeb.Areas.Customer.Controllers
                 var claimsIdentity = (ClaimsIdentity)User.Identity;
                 var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
                 cart.ApplicationUserId = claims.Value;
-
                 var cartItem = _unitOfWork.Cart.GetT(x => x.ProductId == cart.ProductId && x.ApplicationUserId == claims.Value);
 
-                if (cartItem != null)
+                if (cartItem == null)
                 {
                     _unitOfWork.Cart.Add(cart);
                 } else
