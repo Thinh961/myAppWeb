@@ -39,8 +39,9 @@ D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.Generat
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfoInputs.cache
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.AssemblyInfo.cs
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CoreCompileInputs.cache
-D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.csproj.CopyComplete
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.dll
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\refint\MyApp.DataAccessLayer.dll
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.pdb
 D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\ref\MyApp.DataAccessLayer.dll
+D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.DataAccessLayer.sourcelink.json
+D:\myAppWeb\MyApp.DataAccessLayer\obj\Debug\net6.0\MyApp.Da.DDCCD524.Up2Date

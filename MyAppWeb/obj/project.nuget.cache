@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hsarlBKrDOYaNANo2HwOdXpQdW1n1izQIcA/SGamq305gfONtzxaTR9UUmgOPNhAbarAkvufn4377CZfH7K8GQ==",
+  "dgSpecHash": "zrqJxIyV/aspmQnWAIMaGi2+LITt/Ht3vy57JiMrFWxASVhT0tNNlZFAuPqo2Bjg3XNypR/Vs+kgY9F75mamrQ==",
   "success": true,
   "projectFilePath": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
   "expectedPackageFiles": [
@@ -181,6 +181,7 @@
     "C:\\Users\\thinhnc\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\thinhnc\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\thinhnc\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\thinhnc\\.nuget\\packages\\stripe.net\\44.2.0\\stripe.net.44.2.0.nupkg.sha512",
     "C:\\Users\\thinhnc\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\thinhnc\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\thinhnc\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

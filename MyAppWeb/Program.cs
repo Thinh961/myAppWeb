@@ -5,6 +5,7 @@ using MyApp.CommonHelper;
 using MyApp.DataAccessLayer;
 using MyApp.DataAccessLayer.Infrastructure.IRepository;
 using MyApp.DataAccessLayer.Infrastructure.Repository;
+using Stripe;
 
 namespace MyAppWeb
 {
@@ -21,6 +22,7 @@ namespace MyAppWeb
             {
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("PaymentSettings"));
 
             builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -49,7 +51,8 @@ namespace MyAppWeb
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseAuthentication(); ;
+            StripeConfiguration.ApiKey = builder.Configuration.GetSection("PaymentSettings:SecretKey").Get<String>();
+            app.UseAuthentication();
 
             app.UseAuthorization();
             app.MapRazorPages();
