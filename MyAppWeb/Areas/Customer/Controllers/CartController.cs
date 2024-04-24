@@ -113,7 +113,7 @@ namespace MyAppWeb.Areas.Customer.Controllers
                 {
                     PriceData = new SessionLineItemPriceDataOptions
                     {
-                        UnitAmount = (long)item.Product.Price,
+                        UnitAmount = (long)(item.Product.Price * 100),
                         Currency = "usd",
                         ProductData = new SessionLineItemPriceDataProductDataOptions
                         {
@@ -136,9 +136,9 @@ namespace MyAppWeb.Areas.Customer.Controllers
             return new StatusCodeResult(303);
 
 
-            _unitOfWork.Cart.DeleteRange(vm.ListOfCart);
-            _unitOfWork.Save();
-            return RedirectToAction("Index", "Home");
+            //_unitOfWork.Cart.DeleteRange(vm.ListOfCart);
+            //_unitOfWork.Save();
+            //return RedirectToAction("Index", "Home");
         }
 
 
@@ -152,7 +152,10 @@ namespace MyAppWeb.Areas.Customer.Controllers
             {
                 _unitOfWork.OrderHeader.UpdateStatus(id, OrderStatus.StatusApproved, PaymentStatus.StatusApproved);
             }
-            List<Cart> cart = new List<Cart>();
+            List<Cart> cart = _unitOfWork.Cart.GetAll(x=>x.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+            _unitOfWork.Cart.DeleteRange(cart);
+            _unitOfWork.Save();
+            return View(id);
         }
 
         public IActionResult plus(int id)
