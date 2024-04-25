@@ -790,3 +790,4 @@ D:\myAppWeb\MyAppWeb\obj\Debug\net6.0\ref\MyAppWeb.dll
 D:\myAppWeb\MyAppWeb\obj\Debug\net6.0\MyAppWeb.sourcelink.json
 D:\myAppWeb\MyAppWeb\obj\Debug\net6.0\MyAppWeb.csproj.Up2Date
 D:\myAppWeb\MyAppWeb\bin\Debug\net6.0\Stripe.net.dll
+D:\dotNet2\myAppWeb\MyAppWeb\bin\Debug\net6.0\Stripe.net.dll
