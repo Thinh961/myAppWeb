@@ -3,6 +3,14 @@
         <div class="col-6">
             <h2 class="text-primary">List of Orders</h2>
         </div>
+        <div class="col-6">
+            <a asp-controller="order" asp-action="Index" asp-route-status="pending">
+                Pending
+            </a>
+            <a asp-controller="order" asp-action="Index" asp-route-status="approved">
+                Approved
+            </a>
+        </div>
     </div>
 </div>
 
