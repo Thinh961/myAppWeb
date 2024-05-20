@@ -1,6 +1,7 @@
 ﻿@model MyApp.Models.ViewModels.OrderVM
 @using MyApp.CommonHelper
 <form method="post">
+    <input type="hidden" asp-for="OrderHeader.Id" />
     <div class="container-sm">
         <div class="row">
             <div class="col-6">
@@ -100,7 +101,7 @@
                     }
                     else
                     {
-                        <label asp-for="OrderHeader.TrackingNumber">Tracking</label>
+                        <label asp-for="OrderHeader.TrackingNumber">Tracking Number</label>
                         <input readonly asp-for="OrderHeader.TrackingNumber" class="form-control" />
                     }
                 </div>
@@ -154,7 +155,7 @@
                 <div class="mb-4">
                     <div class="card mb-4">
                         <div class="card-header py-3">
-                            <h5>Order Summary</h5>
+                            <h5>Order Summary - @Model.OrderHeader.OrderStatus</h5>
                         </div>
 
                         <div class="card-body">
@@ -181,19 +182,19 @@
                         {
                             if (Model.OrderHeader.OrderStatus == OrderStatus.StatusApproved)
                             {
-                                <button type="submit" class="btn btn-info btn-lg btn-block mb-2">
+                                <button asp-action="InProcess" type="submit" class="btn btn-info btn-lg btn-block mb-2">
                                     Start Processing
                                 </button>
                             }
                             if (Model.OrderHeader.OrderStatus == OrderStatus.StatusInProcess)
                             {
-                                <button type="submit" class="btn btn-success btn-lg btn-block mb-2">
+                                <button asp-action="Shipped" type="submit" onclick="return ValidateEmpty()" class="btn btn-success btn-lg btn-block mb-2">
                                     Ship Order
                                 </button>
                             }
                             if (Model.OrderHeader.OrderStatus != OrderStatus.StatusRefund || Model.OrderHeader.OrderStatus != OrderStatus.StatusCancelled)
                             {
-                                <button type="submit" class="btn btn-dark btn-lg btn-block mb-2">
+                                <button asp-action="CancelOrder" type="submit" class="btn btn-dark btn-lg btn-block mb-2">
                                     Cancel Order
                                 </button>
                             }
@@ -204,3 +205,31 @@
         </div>
     </div>
 </form>
+
+@section scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+    <script>
+        function ValidateEmpty() {
+            if (document.getElementById("OrderHeader_TrackingNumber").value == "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Upload image!",
+                });
+                return false;
+            }
+
+            if (document.getElementById("OrderHeader_Carrier").value == "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Upload image!",
+                });
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

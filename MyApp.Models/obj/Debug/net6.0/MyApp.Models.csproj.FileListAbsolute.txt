@@ -31,8 +31,8 @@ D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.GeneratedMSBuildEditorCon
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfoInputs.cache
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.AssemblyInfo.cs
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.csproj.CoreCompileInputs.cache
+D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.sourcelink.json
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.dll
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\refint\MyApp.Models.dll
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.pdb
 D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\ref\MyApp.Models.dll
-D:\myAppWeb\MyApp.Models\obj\Debug\net6.0\MyApp.Models.sourcelink.json

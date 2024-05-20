@@ -19,8 +19,8 @@ D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.GeneratedMSBu
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfoInputs.cache
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.AssemblyInfo.cs
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.csproj.CoreCompileInputs.cache
+D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.sourcelink.json
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.dll
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\refint\MyApp.CommonHelper.dll
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.pdb
 D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\ref\MyApp.CommonHelper.dll
-D:\myAppWeb\MyApp.CommonHelper\obj\Debug\net6.0\MyApp.CommonHelper.sourcelink.json

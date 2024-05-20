@@ -5,17 +5,24 @@ $(document).ready(function () {
     if (url.includes("pending")) {
         OrderTable("pending")
     }
+    else if (url.includes("approved")) {
+        OrderTable("approved")
+    }
+    else if (url.includes("underprocess")) {
+        OrderTable("underprocess")
+    }
+    else if (url.includes("shipped")) {
+        OrderTable("shipped")
+    }
     else {
-        if (url.includes("approved")) {
-            OrderTable("approved")
-        }
+        OrderTable("all")
     }
 });
 
 function OrderTable(status) {
     dtable = $('#myTable').DataTable({
         "ajax": {
-            "url": "/Admin/Order/AllOrders?status=" +status
+            "url": "/Admin/Order/AllOrders?status=" + status
         },
         "columns": [
             { "data": "name" },
