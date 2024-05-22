@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {}
+    "D:\\dotNet2\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {}
   },
   "projects": {
-    "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
+    "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
+        "projectUniqueName": "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
         "projectName": "MyApp.CommonHelper",
-        "projectPath": "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyApp.CommonHelper\\obj\\",
+        "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,17 +70,17 @@
         }
       }
     },
-    "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+    "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
         "projectName": "MyApp.DataAccessLayer",
-        "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\obj\\",
+        "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,8 +94,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
-                "projectPath": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj"
+              "D:\\dotNet2\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
+                "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj"
               }
             }
           }
@@ -156,17 +156,17 @@
         }
       }
     },
-    "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
+    "D:\\dotNet2\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
+        "projectUniqueName": "D:\\dotNet2\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
         "projectName": "MyApp.Models",
-        "projectPath": "D:\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyApp.Models\\obj\\",
+        "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.Models\\MyApp.Models.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\myAppWeb\\MyApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -226,17 +226,17 @@
         }
       }
     },
-    "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {
+    "D:\\dotNet2\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
+        "projectUniqueName": "D:\\dotNet2\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
         "projectName": "MyAppWeb",
-        "projectPath": "D:\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
-        "packagesPath": "C:\\Users\\thinhnc\\.nuget\\packages\\",
-        "outputPath": "D:\\myAppWeb\\MyAppWeb\\obj\\",
+        "projectPath": "D:\\dotNet2\\myAppWeb\\MyAppWeb\\MyAppWeb.csproj",
+        "packagesPath": "C:\\Users\\Thinh\\.nuget\\packages\\",
+        "outputPath": "D:\\dotNet2\\myAppWeb\\MyAppWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thinhnc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thinh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -250,11 +250,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
-                "projectPath": "D:\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj"
+              "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj": {
+                "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.CommonHelper\\MyApp.CommonHelper.csproj"
               },
-              "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
-                "projectPath": "D:\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
+              "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj": {
+                "projectPath": "D:\\dotNet2\\myAppWeb\\MyApp.DataAccessLayer\\MyApp.DataAccessLayer.csproj"
               }
             }
           }
@@ -320,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
